@@ -47,7 +47,6 @@ technicalSkills:
   list:
     - tr: "Grafana"
     - tr: "Docker / Docker Swarm"
-    - tr: "UI Path"
     - tr: "ServiceNow"
     - tr: "Elasticsearch Kibana and Logstash"
     - tr: "Node-red"
@@ -59,7 +58,9 @@ technicalSkills:
    - name: Docker
      level: 80
    - name: Elasticsearch
-     level: 65
+     level: 50
+   - name: ServiceNow
+     level: 70
    - name: UIPath / PowerAutomate / RobotFramework
      level: 40
    - name: Node-Red
@@ -69,6 +70,8 @@ technicalSkills:
      level: 98
    - name: CSS
      level: 40
+   - name: Javascript
+     level: 20
   other:
    - name: Sound Engineering
      level: 70
