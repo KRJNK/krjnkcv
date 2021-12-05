@@ -20,28 +20,7 @@ career:
    company: Atos Poland Global Services sp. z o. o.
    location: Bydgoszcz, Poland
    dates: June 2020 - current
-   summary: 
-
-        Within the Bridge subtower in Atos, my day to day work is mostly as follows.
-
-        Main Responsibilities
-        - Cooperation with Tooling Architects & Project Managers on new projects
-        - Tracking of potential automations within the organization to improve work efficiency
-        - Creating, implementing and maintaining automation solution within Bridge organization 
-        - Supporting teams globally with scripting, macros and other activities required to improve team effectiveness
-        - Creating dashboards in the inhouse developed application built on-top of ServiceNow
-        - Supporting project team in implementing monitoring solutions and handing over to BAU Ops teams.
-
-        Technologies used
-        - HTML/CSS, Javascript, Bash
-        - Grafana
-        - Elasticsearch, Kibana and Logstash
-        - ServiceNow
-        - Docker / Docker Swarm
-        - Linux OS
-        - Node-Red
-        - UIPath
-        In addition to the above, the position also provides exposure to various challenges and opportunities to improve self-knowledge.
+   summary: In addition to the above, the position also provides exposure to various challenges and opportunities to improve self-knowledge.
    accomplishments:
     - accomplishment: Cooperation with Tooling Architects & Project Managers on new projects
     - accomplishment: Tracking of potential automations within the organization to improve work efficiency
