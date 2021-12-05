@@ -5,22 +5,22 @@ projectUrl: jekyl-cv-crafter
 person:
   name: Patryk Krajnik
   depiction: headshot.png
-  profession: 
-  location: Bydgoszcz, Poland
+  profession: Junior Automation Engineer
+  location: Bytom, Poland
   citizenship: Poland
   email: patryk.krajnik@hotmail.com
   site: 
   phone: +48 531 155 632
   github: /krjnk
   stackoverflow: /
-  linkedin: /streetturtle
+  linkedin: /patryk-krajnik-a3029a1b6/
 
 career:
  - position: Junior Automation Engineer
    company: Atos Poland Global Services sp. z o. o.
    location: Bydgoszcz, Poland
    dates: June 2020 - current
-   summary: Bytom, Kujawsko-Pomorskie, Polska
+   summary: 
 
         Within the Bridge subtower in Atos, my day to day work is mostly as follows.
 
@@ -43,8 +43,13 @@ career:
         - UIPath
         In addition to the above, the position also provides exposure to various challenges and opportunities to improve self-knowledge.
    accomplishments:
-    - accomplishment: Certified AZ-900 - Microsoft Azure Fundamentals
-    - accomplishment: Atos Silver Accolade in 2021
+    - accomplishment: Cooperation with Tooling Architects & Project Managers on new projects
+    - accomplishment: Tracking of potential automations within the organization to improve work efficiency
+    - accomplishment: Creating, implementing and maintaining automation solution within Bridge organization 
+    - accomplishment: Supporting teams globally with scripting, macros and other activities required to improve team effectiveness
+    - accomplishment: Creating dashboards in the inhouse developed application built on-top of ServiceNow
+    - accomplishment: Supporting project team in implementing monitoring solutions and handing over to BAU Ops teams.
+
  - position: Junior ICT Engineer
    company: Atos Poland Global Services sp. z o. o.
    location: Bydgoszcz, Poland
@@ -57,17 +62,20 @@ career:
 technicalSkills:
   list:
     - tr: "Grafana"
-    - tr: "Docker / Swarm"
+    - tr: "Docker / Docker Swarm"
     - tr: "UI Path"
-    - tr: "Bash"
-    - tr: "Elasticsearch"
+    - tr: "ServiceNow"
+    - tr: "Elasticsearch Kibana and Logstash"
     - tr: "Node-red"
+    - tr: "HTML/CSS" 
+    - tr: "Javascript"
+    - tr: "Linux OS / Bash"
   backend:
    - name: Docker
      level: 80
-   - name: Bash
-     level: 65
    - name: Elasticsearch
+     level: 65
+   - name: BNode-Red
      level: 60
   frontend:
    - name: Grafana
@@ -75,27 +83,34 @@ technicalSkills:
    - name: CSS
      level: 63
   other:
-   - name: Funky Sax solo
+   - name: Funky Saxophone
      level: 100
-   - name: Teaching
-     level: 80
+   - name: Teaching Methodology
+     level: 70
 
-sideProjects:
-  - name: jekyll-clean-dark
-    description: Theme for Jekyll - static site generator. After creating theme for my blog I shared it on github.
-    link: https://github.com/streetturtle/jekyll-clean-dark
-    type: github
-    langs: HTML/CSS/Bootstrap
+#sideProjects:
+# - name: tbd
+#    description: Theme for Jekyll - static site generator. After creating theme for my blog I shared it on github.
+#    link: https://github.com/streetturtle/jekyll-clean-dark
+#    type: github
+#    langs: HTML/CSS/Bootstrap
 
-  - name: number-writing-trainer
-    description: Application which helps with learning foreign numerals. Was created to help with learning how to write french numbers as well as to practice AngularJS.
-    link: http://pavelmakhov.com/number-writing-trainer/#/
-    type: site
-    langs: AngularJS/HTML/CSS/Bootstrap
+#  - name: number-writing-trainer
+#    description: Application which helps with learning foreign numerals. Was created to help with learning how to write french numbers as well as to practice AngularJS.
+#    link: http://pavelmakhov.com/number-writing-trainer/#/
+#    type: site
+#    langs: AngularJS/HTML/CSS/Bootstrap
 
 education:
-  - name: Master Splinter Academy
-    degree: Mutant Red-Eared Slider
-    location: sewers of New York City
-    dates: 2007 – 2012
-    link: http://tmnt2012series.wikia.com/
+  - name: Telecomunication
+    degree: -
+    location: University of Technology and Life Sciences in Bydgoszcz
+  - name: Jazz, Conducting and Band Leading
+    degree: Bachelor
+    location: Feliks Nowowiejski Academy of Music in Bydgoszcz
+    dates: 2014 – 2017
+  - name: Music Education
+    degree: Bachelor
+    location: University of Casimir the Great in Bydgoszcz
+    dates: 2017 - 2020
+  
