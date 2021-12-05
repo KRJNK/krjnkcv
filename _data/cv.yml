@@ -12,15 +12,15 @@ person:
   site: 
   phone: +48 531 155 632
   github: /krjnk
-  stackoverflow: /
-  linkedin: /patryk-krajnik-a3029a1b6/
+  stackoverflow: 
+  linkedin: /patryk-krajnik
 
 career:
  - position: Junior Automation Engineer
    company: Atos Poland Global Services sp. z o. o.
    location: Bydgoszcz, Poland
    dates: June 2020 - current
-   summary: In addition to the above, the position also provides exposure to various challenges and opportunities to improve self-knowledge.
+   summary: Position provides exposure to various challenges and opportunities to improve self-knowledge.
    accomplishments:
     - accomplishment: Cooperation with Tooling Architects & Project Managers on new projects
     - accomplishment: Tracking of potential automations within the organization to improve work efficiency
