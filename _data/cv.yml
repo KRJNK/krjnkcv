@@ -73,7 +73,10 @@ technicalSkills:
    - name: Javascript
      level: 20
   other:
-   - name: Language - English B2, Polish C2
+   - name: Language - English B2
+   - level : 70
+   - name: Language - Polish C2
+   - level: 100
    - name: Sound Engineering
      level: 70
    - name: Teaching Methodology
