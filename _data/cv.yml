@@ -58,13 +58,15 @@ technicalSkills:
    - name: Docker
      level: 80
    - name: Elasticsearch
-     level: 50
+     level: 53
    - name: ServiceNow
      level: 70
    - name: UIPath / PowerAutomate / RobotFramework
-     level: 40
+     level: 50
    - name: Node-Red
      level: 30
+   - name: REST API
+     level: 40
   frontend:
    - name: Grafana
      level: 98
