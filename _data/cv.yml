@@ -16,10 +16,18 @@ person:
   linkedin: /patryk-krajnik
 
 career:
+ - position: Junior Cloud Engineer
+   company: Eficode
+   Location: Remote/Łódź
+   dates: April 2022 - now
+   summary: Member of Managed Applications team.
+   accomplishments:
+    - accomplishment: Too soon to talk about it :)
+
  - position: Junior Automation Engineer
    company: Atos Poland Global Services sp. z o. o.
    location: Bydgoszcz, Poland
-   dates: June 2021 - current
+   dates: June 2021 - April 2022
    summary: Member of a project team that is designing monitoring solutions for new customers. Position provides exposure to various challenges and opportunities to improve self-knowledge.
    accomplishments:
     - accomplishment: Cooperation with Tooling Architects & Project Managers on new projects
