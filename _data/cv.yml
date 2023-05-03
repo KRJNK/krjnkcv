@@ -22,7 +22,7 @@ career:
    dates: April 2022 - current
    summary: Designing & Managing customers cloud architectures on Azure & AWS.
    accomplishments:
-    - accomplishment: Implementing Scaling & Service Mesh on Azure Kubernetes Cluster
+    - accomplishment: Configuring Autoscaling & Service Mesh on Azure Kubernetes Cluster
     - accomplishment: Designing & implementing Serverless Data Processing Application on AWS
     - accomplishment: Managing software deployments on on-prem Kubernetes
     - accomplishment: Setting up & managing Hetzner VMs
