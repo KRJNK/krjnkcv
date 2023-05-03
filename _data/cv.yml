@@ -27,7 +27,8 @@ career:
     - accomplishment: Managing software deployments on on-prem Kubernetes
     - accomplishment: Setting up & managing Hetzner VMs
     - accomplishment: Implementing monitoring for wide spectrum of cloud services.
-    - accomplishment: Administering Dependency Tracking tools & creating notification channels with Slack Bot for those.
+    - accomplishment: Administering Dependency Tracking tools
+    - accomplishment: Creating notification channels for various types of alerts in Slack 
     - accomplishment: Building & Managing Jenkins CI/CD pipelines
     - accomplishment: Revising customers infrastructure according to AWS Well Architected Framework & Applying best practice solutions.
 
