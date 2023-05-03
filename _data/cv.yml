@@ -67,19 +67,17 @@ technicalSkills:
     - tr: "Grafana"
     - tr: "Docker / Docker Swarm"
     - tr: "Linux OS / Bash"
-    - tr: "Jira"
-    - tr: "ServiceNow"
-    - tr: "Node-red"
-    - tr: "HTML/CSS" 
     - tr: "Python Programming"
 
-    - tr: "UIPath / PowerAutomate / RobotFramework"
-    - tr: "Elasticsearch Kibana and Logstash"
   backend:
    - name: AWS
      level: 84
    - name: Azure
      level: 55
+   - name: CloudFormation (IaC)
+     level: 91
+   - name: Pulumi
+     level: 30
    - name: Docker
      level: 80
    - name: Kubernetes (Cloud)
