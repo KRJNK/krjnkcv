@@ -66,14 +66,15 @@ technicalSkills:
     - tr: "Dependency Track"
     - tr: "Grafana"
     - tr: "Docker / Docker Swarm"
+    - tr: "Linux OS / Bash"
     - tr: "Jira"
     - tr: "ServiceNow"
-    - tr: "Elasticsearch Kibana and Logstash"
     - tr: "Node-red"
     - tr: "HTML/CSS" 
     - tr: "Python Programming"
-    - tr: "Linux OS / Bash"
-    - tr: "UIPath / PowerAutomate / RobotFramework" 
+
+    - tr: "UIPath / PowerAutomate / RobotFramework"
+    - tr: "Elasticsearch Kibana and Logstash"
   backend:
    - name: AWS
      level: 80
@@ -91,8 +92,6 @@ technicalSkills:
      level: 80
    - name: Linkerd Service Mesh
      level: 59
-   - name: ServiceNow
-     level: 70
    - name: UIPath / PowerAutomate / RobotFramework
      level: 50
    - name: Node-Red
@@ -100,12 +99,21 @@ technicalSkills:
    - name: REST API
      level: 40
   frontend:
+   - name: Jenkins
+     level: 73
    - name: Grafana
      level: 98
-   - name: CSS
-     level: 40
-   - name: Javascript
-     level: 20
+   - name: Zabbix
+     name: 40
+   - name: ArgoCD
+     level: 30
+   - name: Dependency Track
+     level: 85
+   - name: ServiceNow
+     level: 70
+   - name: Jira
+     level: 70
+
   other:
    - name: Language - English B2
      level : 80
