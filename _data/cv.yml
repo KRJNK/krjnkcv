@@ -19,10 +19,17 @@ career:
  - position: Junior Cloud Engineer
    company: Eficode
    location: Łódź/Remote, Poland
-   dates: April 2022 - now
-   summary: Member of Managed Applications team, mostly associated with AWS infrastructures.
+   dates: April 2022 - current
+   summary: Designing & Managing customers cloud architectures on Azure & AWS.
    accomplishments:
-    - accomplishment: Too soon to talk about it, but I'm working on it
+    - accomplishment: Implementing Scaling & Service Mesh on Azure Kubernetes Cluster
+    - accomplishment: Designing & implementing Serverless Data Processing Application on AWS
+    - accomplishment: Managing software deployments on on-prem Kubernetes
+    - accomplishment: Setting up & managing Hetzner VMs
+    - accomplishment: Implementing monitoring for wide spectrum of cloud services.
+    - accomplishment: Administering Dependency Tracking tools & creating notification channels with Slack Bot for those.
+    - accomplishment: Building & Managing Jenkins CI/CD pipelines
+    - accomplishment: Revising customers infrastructure according to AWS Well Architected Framework & Applying best practice solutions.
 
  - position: Junior Automation Engineer
    company: Atos Poland Global Services sp. z o. o.
@@ -53,20 +60,37 @@ career:
 
 technicalSkills:
   list:
+    - tr: "AWS"
+    - tr: "Azure"
+    - tr: "Kubernetes"
+    - tr: "Dependency Track"
     - tr: "Grafana"
     - tr: "Docker / Docker Swarm"
+    - tr: "Jira"
     - tr: "ServiceNow"
     - tr: "Elasticsearch Kibana and Logstash"
     - tr: "Node-red"
     - tr: "HTML/CSS" 
-    - tr: "Javascript"
+    - tr: "Python Programming"
     - tr: "Linux OS / Bash"
     - tr: "UIPath / PowerAutomate / RobotFramework" 
   backend:
+   - name: AWS
+     level: 80
+   - name: Azure
+     level: 55
    - name: Docker
      level: 80
-   - name: Elasticsearch
-     level: 53
+   - name: Kubernetes (Cloud)
+     level: 75
+   - name: Kubernetes (on-prem)
+     level: 40
+   - name: Lambda Fuctions
+     level: 70
+   - name: Ambassador/Edge-Stack
+     level: 80
+   - name: Linkerd Service Mesh
+     level: 59
    - name: ServiceNow
      level: 70
    - name: UIPath / PowerAutomate / RobotFramework
@@ -84,7 +108,7 @@ technicalSkills:
      level: 20
   other:
    - name: Language - English B2
-     level : 70
+     level : 80
    - name: Language - Polish C2
      level: 100
    - name: Sound Engineering
