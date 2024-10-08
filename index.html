@@ -150,32 +150,29 @@
           <!-- Cloud Platforms -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-cloud"></i> Cloud Platforms</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.cloudPlatforms %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
           <!-- Containerization and Orchestration -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-cubes"></i> Containerization & Orchestration</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.containerizationAndOrchestration %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
           <!-- Infrastructure as Code -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-code-fork"></i> Infrastructure as Code</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.infrastructureAsCode %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
         </div>
 
@@ -183,32 +180,29 @@
           <!-- CI/CD Tools -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-rocket"></i> CI/CD Tools</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.ciCdTools %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
           <!-- Monitoring and Logging -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-tachometer"></i> Monitoring & Logging</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.monitoringAndLogging %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
           <!-- Programming and Scripting -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-code"></i> Programming & Scripting</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.programmingAndScripting %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
         </div>
 
@@ -216,12 +210,11 @@
           <!-- Other Tools -->
           <div class="col-xs-4">
             <h4 class="techSkillHeader"><i class="fa fa-wrench"></i> Other Tools</h4>
+            <ul class="list-unstyled">
             {% for item in site.data.cv.technicalSkills.otherTools %}
-              {{ item.name }}
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: {{ item.level }}%"></div>
-              </div>
+              <li>{{ item.name }}</li>
             {% endfor %}
+            </ul>
           </div>
         </div>
 
@@ -311,4 +304,4 @@
   </div>
 </body>
 
-</html>
+</html> 

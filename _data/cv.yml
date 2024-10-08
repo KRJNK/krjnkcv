@@ -13,7 +13,7 @@ person:
   github: /krjnk
   linkedin: /patryk-krajnik
   summary: >
-    Experienced Cloud Engineer with over 2 years of experience in designing and managing cloud architectures on AWS and Azure. Proficient in Kubernetes, Docker, and infrastructure automation tools. Seeking to leverage expertise to contribute to innovative DevOps projects.
+    Experienced Cloud Engineer with over 4 years of experience in designing and managing cloud architectures on AWS and Azure. Proficient in Kubernetes, Docker, and infrastructure automation tools. Seeking to leverage expertise to contribute to innovative DevOps projects.
 
 career:
   - position: Junior Cloud Engineer
@@ -79,8 +79,10 @@ technicalSkills:
       level: 40
 
   infrastructureAsCode:
+    - name: Terraform/OpenTofu/Terragrunt
+      level: 100
     - name: CloudFormation
-      level: 91
+      level: 80
     - name: Pulumi
       level: 30
 
