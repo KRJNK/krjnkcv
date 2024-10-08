@@ -103,13 +103,14 @@ languages:
 certifications:
   - name: "AWS Certified Solutions Architect – Associate"
     date: 2024
-    link: <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0b3506c4-3127-4a68-a32e-bc5ae713f875" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    badge: '<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0b3506c4-3127-4a68-a32e-bc5ae713f875" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>'
   - name: "Microsoft Certified: Azure Fundamentals (AZ-900)"
     date: 2020
-    link: <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="49de0c67-9289-451d-8048-aad442cde0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    badge: '<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="49de0c67-9289-451d-8048-aad442cde0a2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>'
   - name: PeopleCert DevOps Fundamentals
     date: 2020
     link: https://www.peoplecert.org/browse-certifications/devops/PeopleCert-DevOps-37/peoplecert-devops-fundamentals-2690
+
 
 education:
   - degree: Telecommunication

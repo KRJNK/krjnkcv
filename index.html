@@ -244,8 +244,10 @@
           <div class="col-xs-12">
             <h4><b>{{ cert.name }}</b></h4>
             <p>{{ cert.date }}</p>
-            {% if cert.link %}
-            <a href="{{ cert.link }}">{{ cert.link }}</a>
+            {% if cert.badge %}
+              {{ cert.badge | safe }}
+            {% elsif cert.link %}
+              <a href="{{ cert.link }}">{{ cert.link }}</a>
             {% endif %}
           </div>
         </div>
