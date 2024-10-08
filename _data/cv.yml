@@ -40,7 +40,7 @@ career:
       - accomplishment: Developed automation solutions using Python and Bash, reducing manual workload and increasing efficiency.
       - accomplishment: Designed Grafana dashboards utilizing Elasticsearch data, improving data visualization and decision-making processes.
       - accomplishment: Assisted in deploying high-availability applications using Docker and Docker Swarm, enhancing system uptime and reliability.
-      - accomplishment: Identified and implemented automation opportunities within the organization, increasing work efficiency by 15%.
+      - accomplishment: Identified and implemented automation opportunities within the organization, increasing work efficiency.
       - accomplishment: Collaborated with cross-functional teams to implement monitoring solutions and transition them to BAU operations.
 
   - position: Junior ICT Engineer
@@ -51,7 +51,7 @@ career:
       Provided frontline operational support for multiple clients' infrastructures, addressing network, server, system, database, and application issues. Ensured seamless IT operations by promptly responding to incidents and coordinating with various support teams.
     accomplishments:
       - accomplishment: Resolved technical issues related to servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction rates.
-      - accomplishment: Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times by 20%.
+      - accomplishment: Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times.
       - accomplishment: Performed routine operational tasks including generating reports and conducting system integrity checks.
       - accomplishment: Assisted in implementing ITIL processes within the support team, improving incident and problem management efficiency.
 
