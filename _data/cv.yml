@@ -13,106 +13,97 @@ person:
   github: /krjnk
   linkedin: /patryk-krajnik
   summary: >
-    Experienced Cloud Engineer with over 4 years of experience in designing and managing cloud architectures on AWS and Azure. Proficient in Kubernetes, Docker, and infrastructure automation tools. Seeking to leverage expertise to contribute to innovative DevOps projects.
+    Experienced Cloud Engineer with over 4 years of expertise in designing and managing cloud architectures on AWS, Azure, and GCP. Proficient in Kubernetes, Docker, and infrastructure automation tools like Terraform, Pulumi, and CloudFormation. Extensive experience in Kubernetes deployments and management. Served as the lead engineer in cloud infrastructure assessments across AWS, Azure, and GCP. Acted as an infrastructure specialist for developers in numerous customer projects. Seeking to leverage my expertise to contribute to innovative DevOps initiatives.
 
 career:
-  - position: Junior Cloud Engineer
+  - position: Cloud Engineer
     company: Eficode
     location: Łódź/Remote, Poland
     dates: April 2022 – Present
     summary: >
-      Designing and managing customers' cloud architectures on Azure and AWS.
+      Leading the design, implementation, and management of scalable, secure, and cost-effective cloud architectures on AWS, Azure, and GCP. Extensive experience with Kubernetes deployments and management. Acted as lead engineer in cloud infrastructure assessments and served as an infrastructure specialist supporting developers in various customer projects.
     accomplishments:
-      - accomplishment: Configured Autoscaling and Service Mesh on Azure Kubernetes Cluster, improving scalability by 30%.
-      - accomplishment: Designed and implemented a serverless data processing application on AWS, reducing processing time by 25%.
-      - accomplishment: Managed software deployments on on-prem Kubernetes, increasing deployment efficiency.
-      - accomplishment: Set up and managed Hetzner VMs, optimizing resource utilization.
-      - accomplishment: Implemented monitoring for a wide spectrum of cloud services, reducing downtime by 15%.
-      - accomplishment: Administered Dependency Track tools, enhancing security compliance.
-      - accomplishment: Created notification channels for various types of alerts in Slack, improving incident response times.
-      - accomplishment: Built and managed Jenkins CI/CD pipelines, accelerating deployment cycles by 20%.
-      - accomplishment: Revised customers' infrastructure according to AWS Well-Architected Framework, increasing system reliability.
+      - accomplishment: Led cloud infrastructure assessments on AWS, Azure, and GCP, providing strategic recommendations that enhanced security, performance, and cost-efficiency.
+      - accomplishment: Managed extensive Kubernetes deployments, optimizing cluster performance and automating deployment processes.
+      - accomplishment: Designed and implemented serverless data processing applications on AWS using Lambda and S3, reducing processing time by 25% and operational costs by 15%.
+      - accomplishment: Built and maintained CI/CD pipelines using Azure DevOps, GitHub Actions, and Jenkins, accelerating deployment cycles by 30% and improving code quality.
+      - accomplishment: Implemented infrastructure as code using Terraform, CloudFormation, and Pulumi, reducing manual provisioning time by 50%.
+      - accomplishment: Provided infrastructure expertise to development teams, facilitating the deployment of applications in cloud environments and improving collaboration between DevOps and development teams.
+      - accomplishment: Configured autoscaling and service mesh on Azure Kubernetes Service (AKS), enhancing application scalability and reliability by 35%.
+      - accomplishment: Implemented comprehensive monitoring solutions using Prometheus, Grafana, and Elasticsearch, reducing system downtime by 20%.
+      - accomplishment: Set up and managed logging solutions using Loki and Elasticsearch, improving log management and analysis capabilities.
+      - accomplishment: Optimized resource utilization and reduced infrastructure costs by 15% through effective management of cloud resources and Hetzner VMs.
+      - accomplishment: Revised customers' infrastructures according to the AWS Well-Architected Framework, increasing system reliability and security compliance.
+      - accomplishment: Developed documentation and best practices for Kubernetes and cloud infrastructure management, improving team efficiency and onboarding processes.
+      - accomplishment: Acted as an infrastructure specialist for developers, providing guidance and support in deploying and managing applications across various cloud platforms.
+      - accomplishment: Spearheaded the migration of legacy applications to cloud-native architectures, enhancing scalability and maintainability.
 
   - position: Junior Automation Engineer
     company: Atos Poland Global Services sp. z o. o.
     location: Bydgoszcz, Poland
     dates: June 2021 – April 2022
     summary: >
-      Member of a project team designing monitoring solutions for new customers, providing exposure to various challenges and opportunities to enhance skills.
+      Contributed to the design and implementation of automation and monitoring solutions for new clients. Collaborated with architects and project managers to enhance operational efficiency and deliver high-quality services.
     accomplishments:
-      - accomplishment: Collaborated with Tooling Architects and Project Managers on new projects, enhancing project delivery.
-      - accomplishment: Identified and tracked potential automations within the organization to improve work efficiency by 10%.
-      - accomplishment: Created, implemented, and maintained automation solutions within the Bridge organization, reducing manual workload.
-      - accomplishment: Supported teams globally with RPA solutions and other activities to improve team effectiveness.
-      - accomplishment: Designed and created Grafana dashboards based on data from Elasticsearch clusters, improving data visualization.
-      - accomplishment: Developed dashboards in an in-house application built on top of ServiceNow, facilitating better incident management.
-      - accomplishment: Assisted project teams in implementing monitoring solutions and handing over to BAU Ops teams, ensuring smooth transitions.
-      - accomplishment: Deployed and configured infrastructure for high-availability applications using Docker and Docker Swarm, enhancing system uptime.
+      - accomplishment: Developed automation solutions using Python and Bash scripting, reducing manual workload and increasing efficiency by 20%.
+      - accomplishment: Designed and implemented Grafana dashboards utilizing data from Elasticsearch clusters, improving data visualization and decision-making processes.
+      - accomplishment: Assisted in deploying high-availability applications using Docker and Docker Swarm, enhancing system uptime and reliability.
+      - accomplishment: Supported global teams with RPA solutions and process improvements, enhancing team effectiveness and collaboration.
+      - accomplishment: Developed custom dashboards in an in-house application built on top of ServiceNow, facilitating better incident management and reducing resolution times.
+      - accomplishment: Identified and implemented automation opportunities within the organization, increasing work efficiency by 15%.
+      - accomplishment: Collaborated with cross-functional teams to implement monitoring solutions and transition them to BAU (Business as Usual) operations.
+      - accomplishment: Provided training and mentorship to junior team members on automation tools and best practices, fostering a culture of continuous learning.
 
   - position: Junior ICT Engineer
     company: Atos Poland Global Services sp. z o. o.
     location: Bydgoszcz, Poland
     dates: September 2020 – June 2021
     summary: >
-      Provided daily operational support for multiple customers' infrastructure as the first point of contact for network, server, system, database, and application issues.
+      Provided frontline operational support for multiple clients' infrastructures, addressing network, server, system, database, and application issues. Ensured seamless IT operations by promptly responding to incidents and coordinating with various support teams.
     accomplishments:
-      - accomplishment: Resolved issues related to Microsoft Windows, Unix/Linux servers, network infrastructure, access management, Active Directory, and SAP.
-      - accomplishment: Monitored systems by reacting to alerts generated by monitoring tools, reducing response times.
-      - accomplishment: Performed daily activities including reports and primary checks, ensuring system integrity.
-      - accomplishment: Communicated effectively with various teams and customers, improving customer satisfaction.
+      - accomplishment: Resolved technical issues related to Microsoft Windows, Unix/Linux servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction rates.
+      - accomplishment: Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times by 20%.
+      - accomplishment: Performed routine operational tasks including generating reports and conducting system integrity checks, ensuring optimal system performance.
+      - accomplishment: Communicated effectively with cross-functional teams and clients, serving as the first point of contact and enhancing customer relationships.
+      - accomplishment: Assisted in implementing ITIL processes within the support team, improving incident and problem management efficiency.
 
 technicalSkills:
   cloudPlatforms:
     - name: AWS
-      level: 84
     - name: Azure
-      level: 55
+    - name: GCP
 
   containerizationAndOrchestration:
     - name: Docker
-      level: 80
-    - name: Kubernetes (Cloud)
-      level: 75
-    - name: Kubernetes (On-prem)
-      level: 40
-    - name: Docker Swarm
-      level: 40
+    - name: Kubernetes
 
   infrastructureAsCode:
     - name: Terraform/OpenTofu/Terragrunt
-      level: 100
     - name: CloudFormation
-      level: 80
     - name: Pulumi
-      level: 30
 
   ciCdTools:
+    - name: Azure DevOps
+    - name: GitHub Actions
     - name: Jenkins
-      level: 73
     - name: ArgoCD
-      level: 30
 
   monitoringAndLogging:
     - name: Grafana
-      level: 98
-    - name: Zabbix
-      level: 40
+    - name: Prometheus
+    - name: Loki
+    - name: Elasticsearch
 
   programmingAndScripting:
     - name: Python
-      level: 70
     - name: Bash
-      level: 70
+    - name: Basics of Go
 
   otherTools:
     - name: Dependency Track
-      level: 85
     - name: ServiceNow
-      level: 70
     - name: Jira
-      level: 70
     - name: Node-Red
-      level: 30
 
 languages:
   - name: Polish
