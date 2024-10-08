@@ -23,12 +23,12 @@ career:
     summary: >
       Leading the design, implementation, and management of scalable, secure, and cost-effective cloud architectures on AWS, Azure, and GCP. Extensive experience with Kubernetes deployments and management, including service mesh implementations using Istio and Linkerd. Acted as lead engineer in cloud infrastructure assessments and served as an infrastructure specialist supporting developers in various customer projects.
     accomplishments:
-      - Led cloud infrastructure assessments on AWS, Azure, and GCP, providing strategic recommendations that enhanced security, performance, and cost-efficiency.
-      - Managed Kubernetes deployments, utilizing Istio and Linkerd for service mesh implementations, optimizing cluster performance and network management.
-      - Implemented infrastructure as code using Terraform, CloudFormation, and Pulumi, reducing manual provisioning time and security.
-      - Built and maintained CI/CD pipelines using Azure DevOps, GitHub Actions, and Jenkins, accelerating deployment cycles and improving code quality.
-      - Provided infrastructure expertise to development teams, facilitating the deployment of applications in cloud environments and improving collaboration between DevOps and development teams.
-      - Configured autoscaling on Azure Kubernetes Service (AKS), enhancing application scalability and reliability.
+      - accomplishment: Led cloud infrastructure assessments on AWS, Azure, and GCP, providing strategic recommendations that enhanced security, performance, and cost-efficiency.
+      - accomplishment: Managed Kubernetes deployments, utilizing Istio and Linkerd for service mesh implementations, optimizing cluster performance and network management.
+      - accomplishment: Implemented infrastructure as code using Terraform, CloudFormation, and Pulumi, reducing manual provisioning time and security.
+      - accomplishment: Built and maintained CI/CD pipelines using Azure DevOps, GitHub Actions, and Jenkins, accelerating deployment cycles and improving code quality.
+      - accomplishment: Provided infrastructure expertise to development teams, facilitating the deployment of applications in cloud environments and improving collaboration between DevOps and development teams.
+      - accomplishment: Configured autoscaling on Azure Kubernetes Service (AKS), enhancing application scalability and reliability.
 
   - position: Junior Automation Engineer
     company: Atos Poland Global Services sp. z o. o.
@@ -37,11 +37,11 @@ career:
     summary: >
       Contributed to the design and implementation of automation and monitoring solutions for new clients. Collaborated with architects and project managers to enhance operational efficiency and deliver high-quality services.
     accomplishments:
-      - Developed automation solutions using Python and Bash, reducing manual workload and increasing efficiency.
-      - Designed Grafana dashboards utilizing Elasticsearch data, improving data visualization and decision-making processes.
-      - Assisted in deploying high-availability applications using Docker and Docker Swarm, enhancing system uptime and reliability.
-      - Identified and implemented automation opportunities within the organization, increasing work efficiency by 15%.
-      - Collaborated with cross-functional teams to implement monitoring solutions and transition them to BAU operations.
+      - accomplishment: Developed automation solutions using Python and Bash, reducing manual workload and increasing efficiency.
+      - accomplishment: Designed Grafana dashboards utilizing Elasticsearch data, improving data visualization and decision-making processes.
+      - accomplishment: Assisted in deploying high-availability applications using Docker and Docker Swarm, enhancing system uptime and reliability.
+      - accomplishment: Identified and implemented automation opportunities within the organization, increasing work efficiency by 15%.
+      - accomplishment: Collaborated with cross-functional teams to implement monitoring solutions and transition them to BAU operations.
 
   - position: Junior ICT Engineer
     company: Atos Poland Global Services sp. z o. o.
@@ -50,10 +50,10 @@ career:
     summary: >
       Provided frontline operational support for multiple clients' infrastructures, addressing network, server, system, database, and application issues. Ensured seamless IT operations by promptly responding to incidents and coordinating with various support teams.
     accomplishments:
-      - Resolved technical issues related to servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction rates.
-      - Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times by 20%.
-      - Performed routine operational tasks including generating reports and conducting system integrity checks.
-      - Assisted in implementing ITIL processes within the support team, improving incident and problem management efficiency.
+      - accomplishment: Resolved technical issues related to servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction rates.
+      - accomplishment: Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times by 20%.
+      - accomplishment: Performed routine operational tasks including generating reports and conducting system integrity checks.
+      - accomplishment: Assisted in implementing ITIL processes within the support team, improving incident and problem management efficiency.
 
 technicalSkills:
   cloudPlatforms:
