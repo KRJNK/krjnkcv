@@ -1,98 +1,910 @@
 ---
 ---
-body{
-  background-color: #333 !important;
-  background-image: url('https://www.transparenttextures.com/patterns/random-grey-variations.png');
+/* ==========================================================================
+   PATRYK KRAJNIK - CLOUD & DEVOPS ENGINEER CV STYLESHEET
+   Clean, modern, ATS-friendly, responsive & print-optimized.
+   ========================================================================== */
+
+/* Variables */
+$font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$color-bg: #f1f5f9;
+$color-card: #ffffff;
+$color-text-primary: #0f172a;
+$color-text-secondary: #334155;
+$color-text-muted: #64748b;
+$color-text-light: #94a3b8;
+
+$color-accent: #2563eb;
+$color-accent-hover: #1d4ed8;
+$color-accent-light: #eff6ff;
+$color-accent-border: #bfdbfe;
+
+$color-border: #e2e8f0;
+$color-border-subtle: #f1f5f9;
+
+$color-card-bg: #f8fafc;
+$color-tag-bg: #ffffff;
+$color-tag-border: #cbd5e1;
+
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+$radius-full: 9999px;
+
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+$shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-  background-color: #FFFFFF;
-  margin: 50px 0;
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  color: $color-text-secondary;
+  background-color: $color-bg;
 }
 
-.header{
-  padding: 50px 50px 20px;
+body {
+  font-family: $font-sans;
+  background-color: $color-bg;
+  background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+  color: $color-text-secondary;
+  margin: 0;
+  padding: 32px 16px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.bg-gray{
-  background-color: #ddd;
-}
-
-.section{
-  padding: 20px 50px;
-  .jd{
-    padding: 20px 0;
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  &:hover {
+    color: $color-accent-hover;
+    text-decoration: none;
   }
 }
 
-.section-border{
-  border-top: 1px solid lightblue;
-  .jd{
-    border-bottom: 1px solid lightblue;
+/* Document Container */
+.cv-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cv-page {
+  background: $color-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+  border: 1px solid $color-border;
+  padding: 44px 48px;
+}
+
+/* ==========================================================================
+   HEADER / HERO
+   ========================================================================== */
+.cv-header {
+  padding-bottom: 28px;
+  border-bottom: 2px solid $color-border;
+  margin-bottom: 28px;
+}
+
+.header-primary {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.header-avatar-container {
+  flex-shrink: 0;
+}
+
+.header-avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: $radius-full;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px $color-accent-border, $shadow-md;
+  display: block;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.header-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: $color-text-primary;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+
+.header-profession {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: $color-accent-light;
+  border: 1px solid $color-accent-border;
+  padding: 5px 14px;
+  border-radius: $radius-full;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: $radius-full;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  display: inline-block;
+}
+
+.profession-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $color-accent-hover;
+  letter-spacing: -0.01em;
+}
+
+.header-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $color-text-secondary;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background: $color-accent-light;
+    border-color: $color-accent-border;
+    color: $color-accent;
   }
-  .jd:last-child{
-      border-bottom: none;
+}
+
+.contact-icon {
+  color: $color-accent;
+  font-size: 0.95rem;
+}
+
+.contact-text {
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   SECTION TITLES
+   ========================================================================== */
+.cv-section {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.progress{
-  height: 8px !important;
-  margin-bottom: 10px !important;
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-text-primary;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid $color-border;
 }
 
-.name{
-  font-size: 40px;
-  margin-bottom: 0;
-}
-.profession{
-  font-family: 'Roboto Slab';
-  font-weight: 300;
-  font-size: 20px;
+.section-title-icon {
+  color: $color-accent;
+  font-size: 1.1rem;
 }
 
-.side-project{
-  padding-bottom: 20px;
-  :last-child{
-    padding-bottom: 0
+/* ==========================================================================
+   PROFESSIONAL SUMMARY
+   ========================================================================== */
+.summary-card {
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-left: 4px solid $color-accent;
+  border-radius: $radius-md;
+  padding: 16px 20px;
+}
+
+.summary-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: $color-text-secondary;
+  margin: 0;
+}
+
+/* ==========================================================================
+   CAREER EXPERIENCE
+   ========================================================================== */
+.career-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.career-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 20px 22px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border-color: $color-accent-border;
+    box-shadow: $shadow-sm;
   }
 }
-h1, h2{
-  font-family: 'Archivo Black' !important;
+
+.career-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
 }
 
-.techSkillHeader{
-  text-align: center;
+.career-title-group {
+  flex: 1;
+  min-width: 240px;
+}
+
+.career-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.career-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.career-company {
+  font-weight: 600;
+  color: $color-accent;
+}
+
+.career-separator {
+  color: $color-text-light;
+}
+
+.career-location {
+  color: $color-text-muted;
+  i {
+    margin-right: 2px;
+  }
+}
+
+.career-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: $font-mono;
+  color: $color-text-muted;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  padding: 4px 10px;
+  border-radius: $radius-full;
+  white-space: nowrap;
+}
+
+.career-summary {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: $color-text-secondary;
+  margin-bottom: 14px;
+}
+
+.career-accomplishments {
+  border-top: 1px dashed $color-border;
+  padding-top: 12px;
+}
+
+.accomplishments-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $color-text-primary;
+  margin-bottom: 8px;
+}
+
+.accomplishments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: $color-text-secondary;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      top: -1px;
+      color: $color-accent;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* ==========================================================================
+   TECHNICAL SKILLS
+   ========================================================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.skill-group-card {
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 14px 16px;
+}
+
+.skill-group-span-2 {
+  grid-column: span 2;
+}
+
+.skill-group-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.group-icon {
+  color: $color-accent;
+  font-size: 0.95rem;
+}
+
+.skill-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: $color-tag-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  padding: 4px 9px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $color-text-primary;
+  box-shadow: $shadow-sm;
+  transition: all 0.15s ease;
+
+  i {
+    color: $color-accent;
+    font-size: 0.85rem;
+  }
+
+  &:hover {
+    border-color: $color-accent-border;
+    background: $color-accent-light;
+  }
+}
+
+.competencies-card {
+  background: #ffffff;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 14px 18px;
+}
+
+.competencies-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin-bottom: 8px;
+  i {
+    color: #10b981;
+    margin-right: 4px;
+  }
+}
+
+.competencies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 0.85rem;
+    color: $color-text-secondary;
+    &::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* ==========================================================================
+   SPLIT TWO-COLUMN LAYOUT (Certs, Edu, Langs, Interests)
+   ========================================================================== */
+.cv-columns-split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.cv-column-main, .cv-column-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Certifications */
+.certs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-card {
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 12px 16px;
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cert-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  line-height: 1.35;
+}
+
+.cert-year {
+  font-size: 0.78rem;
+  font-family: $font-mono;
+  font-weight: 600;
+  color: $color-text-muted;
+  background: #ffffff;
+  border: 1px solid $color-border;
+  padding: 2px 7px;
+  border-radius: $radius-sm;
+  white-space: nowrap;
+}
+
+.cert-badge-container {
+  margin-top: 10px;
+}
+
+.cert-link-wrap {
+  margin-top: 6px;
+}
+
+.cert-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Education */
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edu-card {
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: 12px 16px;
+}
+
+.edu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.edu-degree {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+.edu-dates {
+  font-size: 0.78rem;
+  font-family: $font-mono;
+  font-weight: 600;
+  color: $color-text-muted;
+  background: #ffffff;
+  border: 1px solid $color-border;
+  padding: 2px 7px;
+  border-radius: $radius-sm;
+  white-space: nowrap;
+}
+
+.edu-institution {
+  font-size: 0.85rem;
+  color: $color-text-secondary;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.edu-icon {
+  color: $color-accent;
+  font-size: 0.85rem;
+}
+
+.edu-link-wrap {
+  font-size: 0.8rem;
+}
+
+.edu-link {
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Languages */
+.lang-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lang-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  padding: 8px 12px;
+}
+
+.lang-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: $color-text-primary;
+}
+
+.lang-proficiency {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: $color-accent-hover;
+  background: $color-accent-light;
+  border: 1px solid $color-accent-border;
+  padding: 2px 8px;
+  border-radius: $radius-full;
+}
+
+/* Interests */
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  padding: 6px 14px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: $color-text-secondary;
+
+  .tag-icon {
+    color: $color-accent;
+    font-size: 0.85rem;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE (MOBILE & TABLET)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .cv-page {
+    padding: 24px 18px;
+    border-radius: $radius-md;
+  }
+
+  .header-primary {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .header-name {
+    font-size: 1.8rem;
+  }
+
+  .header-contact {
+    justify-content: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .career-card-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .career-date-badge {
+    align-self: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-group-span-2 {
+    grid-column: span 1;
+  }
+
+  .cv-columns-split {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLESHEET (PDF & PAPER)
+   ========================================================================== */
+@page {
+  size: A4 portrait;
+  margin: 12mm 14mm;
 }
 
 @media print {
-  .section {
-    page-break-inside: avoid;
+  html, body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #0f172a !important;
+    font-size: 12.5px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
+
+  .cv-wrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .cv-page {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .cv-header {
+    padding-bottom: 14px !important;
+    margin-bottom: 16px !important;
+    border-bottom: 1.5px solid #cbd5e1 !important;
+  }
+
+  .header-avatar {
+    width: 84px !important;
+    height: 84px !important;
+    box-shadow: none !important;
+    border: 2px solid #cbd5e1 !important;
+  }
+
+  .header-name {
+    font-size: 1.7rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .header-profession {
+    padding: 3px 10px !important;
+  }
+
+  .profession-text {
+    font-size: 0.85rem !important;
+  }
+
+  .header-contact {
+    gap: 6px 10px !important;
+  }
+
+  .contact-item {
+    padding: 3px 8px !important;
+    font-size: 0.78rem !important;
+    border-color: #cbd5e1 !important;
+    background: #f8fafc !important;
+  }
+
+  .cv-section {
+    margin-bottom: 18px !important;
+  }
+
+  .section-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 4px !important;
+    border-bottom: 1.5px solid #cbd5e1 !important;
+  }
+
+  .summary-card {
+    padding: 10px 14px !important;
+    border-left: 3px solid #2563eb !important;
+  }
+
+  .summary-text {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .career-timeline {
+    gap: 12px !important;
+  }
+
+  .career-card {
+    padding: 12px 14px !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .career-role {
+    font-size: 1rem !important;
+  }
+
+  .career-summary {
+    font-size: 0.83rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .accomplishments-list li {
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .skills-grid {
+    gap: 10px !important;
+    margin-bottom: 10px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .skill-group-card {
+    padding: 10px 12px !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .skill-group-heading {
+    font-size: 0.82rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  .skill-tag {
+    padding: 2px 7px !important;
+    font-size: 0.76rem !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .cv-columns-split {
+    gap: 16px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .cert-card, .edu-card, .lang-card {
+    padding: 8px 12px !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .cert-badge-container {
+    display: none !important; /* Hide iframe widget in print to avoid empty/broken boxes */
+  }
+
+  .interest-tag {
+    padding: 3px 10px !important;
+    font-size: 0.78rem !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
   a[href]:after {
     content: none !important;
   }
-  .pagebreakishere {
-    padding-top: 80px;
-  }
-  .container {
-    width: 1100px;
-    margin: 20px 50px;
-    padding: 20px 50px;
-  }
-  .progress {
-    background-color: #F5F5F5 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F5F5F5', endColorstr='#F5F5F5')" !important;
-  }
-  .progress-bar-success {
-    display: block !important;
-    background-color: #5BC0DE !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5BC0DE', endColorstr='#5BC0DE')" !important;
-  }
-  .progress,
-  .progress > .progress-bar {
-    display: block !important;
-    -webkit-print-color-adjust: exact !important;
-    box-shadow: inset 0 0 !important;
-    -webkit-box-shadow: inset 0 0 !important;
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 }

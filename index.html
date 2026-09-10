@@ -1,337 +1,424 @@
 ---
 ---
 <!DOCTYPE html>
-<!--[if lt IE 7 ]>
-<html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>
-<html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>
-<html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.data.cv.person.name }}'s CV</title>
+  <title>{{ site.data.cv.person.name }} - {{ site.data.cv.person.profession }} | CV</title>
   <meta name="author" content="{{ site.data.cv.person.name }}" />
-  <meta name="description" content="{{ site.data.cv.person.name }}'s CV" />
+  <meta name="description" content="Resume of {{ site.data.cv.person.name }} - {{ site.data.cv.person.profession }}" />
   <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Compiled Styles -->
   <link href="assets/cv.css" rel="stylesheet">
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="all" />
-
-  <link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
-
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: { families: [ 'Passion+One:400,700:latin' ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
 </head>
 
 <body>
-  <div class="container">
-      <div class="row header bg-gray">
-          <div class="col-xs-4">
-              <h1 class="name">{{ site.data.cv.person.name }}</h1>
-              <span class="profession">{{ site.data.cv.person.profession }}</span>
+  <div class="cv-wrapper">
+    <main class="cv-page">
+      
+      <!-- HEADER / HERO -->
+      <header class="cv-header">
+        <div class="header-primary">
+          {% if site.data.cv.person.depiction %}
+          <div class="header-avatar-container">
+            <img src="{{ site.data.cv.person.depiction }}" alt="{{ site.data.cv.person.name }}" class="header-avatar" />
           </div>
-
-          <div class="col-md-5 text-center">
-              <img src="{{ site.data.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.data.cv.person.name }}'s Photo" class="img-rounded">
+          {% endif %}
+          
+          <div class="header-info">
+            <h1 class="header-name">{{ site.data.cv.person.name }}</h1>
+            <div class="header-profession">
+              <span class="status-indicator" aria-hidden="true"></span>
+              <span class="profession-text">{{ site.data.cv.person.profession }}</span>
+            </div>
           </div>
-
-          <div class="col-xs-3">
-              <ul class="list-unstyled">
-                  {% if site.data.cv.person.location %}
-                      <li><i class="fa fa-map-marker"></i> {{site.data.cv.person.location}}</li>
-                  {% endif %}
-                  {% if site.data.cv.person.citizenship %}
-                      <li><i class="fa fa-flag-o"></i> {{site.data.cv.person.citizenship}}</li>
-                  {% endif %}
-                  {% if site.data.cv.person.email %}
-                      <li><i class="fa fa-envelope-o"></i>
-                          <a href="mailto:{{ site.data.cv.person.email }}">{{site.data.cv.person.email }}</a></li>
-                  {% endif %}
-                  {% if site.data.cv.person.site %}
-                      <li><i class="fa fa-laptop"></i>
-                          <a href="http://{{ site.data.cv.person.site }}">{{ site.data.cv.person.site }}</a></li>
-                  {% endif %}
-                  {% if site.data.cv.person.phone %}
-                      <li><i class="fa fa-phone"></i> {{site.data.cv.person.phone}}</li>
-                  {% endif %}
-                  {% if site.data.cv.person.github %}
-                      <li><i class="fa fa-github"></i>
-                          <a href="https://github.com{{site.data.cv.person.github}}">{{site.data.cv.person.github}}</a>
-                      </li>
-                  {% endif %}
-                  {% if site.data.cv.person.stackoverflow %}
-                      <li><i class="fa fa-stack-overflow"></i> <a
-                              href="http://stackoverflow.com/users/1252056{{site.data.cv.person.stackoverflow}}">{{site.data.cv.person.stackoverflow}}</a>
-                      </li>
-                  {% endif %}
-                  {% if site.data.cv.person.linkedin %}
-                  <li><i class="fa fa-linkedin"></i>
-                      <a href="https://www.linkedin.com/in{{site.data.cv.person.linkedin}}">{{site.data.cv.person.linkedin}}</a>
-                  </li>
-                  {% endif %}
-              </ul>
-          </div>
-      </div>
-
-      <!-- Professional Summary -->
-      {% if site.data.cv.person.summary %}
-      <div class="row section">
-        <div class="col-xs-12">
-          <h2>Professional Summary</h2>
-          <p>{{ site.data.cv.person.summary }}</p>
         </div>
-      </div>
+
+        <div class="header-contact">
+          {% if site.data.cv.person.email %}
+          <a href="mailto:{{ site.data.cv.person.email }}" class="contact-item" title="Email">
+            <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">{{ site.data.cv.person.email }}</span>
+          </a>
+          {% endif %}
+
+          {% if site.data.cv.person.phone %}
+          <a href="tel:{{ site.data.cv.person.phone | replace: ' ', '' }}" class="contact-item" title="Phone">
+            <i class="fa fa-phone contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">{{ site.data.cv.person.phone }}</span>
+          </a>
+          {% endif %}
+
+          {% if site.data.cv.person.location %}
+          <div class="contact-item" title="Location">
+            <i class="fa fa-map-marker contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">{{ site.data.cv.person.location }}</span>
+          </div>
+          {% endif %}
+
+          {% if site.data.cv.person.citizenship %}
+          <div class="contact-item" title="Citizenship">
+            <i class="fa fa-globe contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">Citizenship: {{ site.data.cv.person.citizenship }}</span>
+          </div>
+          {% endif %}
+
+          {% if site.data.cv.person.linkedin %}
+          <a href="https://www.linkedin.com/in{{ site.data.cv.person.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-item" title="LinkedIn Profile">
+            <i class="fa fa-linkedin contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">linkedin.com/in{{ site.data.cv.person.linkedin }}</span>
+          </a>
+          {% endif %}
+
+          {% if site.data.cv.person.github %}
+          <a href="https://github.com{{ site.data.cv.person.github }}" target="_blank" rel="noopener noreferrer" class="contact-item" title="GitHub Profile">
+            <i class="fa fa-github contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">github.com{{ site.data.cv.person.github }}</span>
+          </a>
+          {% endif %}
+
+          {% if site.data.cv.person.site %}
+          <a href="http://{{ site.data.cv.person.site }}" target="_blank" rel="noopener noreferrer" class="contact-item" title="Personal Website">
+            <i class="fa fa-external-link contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">{{ site.data.cv.person.site }}</span>
+          </a>
+          {% endif %}
+
+          {% if site.data.cv.person.stackoverflow %}
+          <a href="http://stackoverflow.com/users/1252056{{ site.data.cv.person.stackoverflow }}" target="_blank" rel="noopener noreferrer" class="contact-item" title="StackOverflow">
+            <i class="fa fa-stack-overflow contact-icon" aria-hidden="true"></i>
+            <span class="contact-text">StackOverflow</span>
+          </a>
+          {% endif %}
+        </div>
+      </header>
+
+      <!-- PROFESSIONAL SUMMARY -->
+      {% if site.data.cv.person.summary %}
+      <section class="cv-section summary-section">
+        <h2 class="section-title">
+          <i class="fa fa-user-circle-o section-title-icon" aria-hidden="true"></i>
+          <span>Professional Summary</span>
+        </h2>
+        <div class="summary-card">
+          <p class="summary-text">{{ site.data.cv.person.summary }}</p>
+        </div>
+      </section>
       {% endif %}
 
-    <div class="row  section section-border">
-      <div class="col-xs-3">
-        <h2>Career</h2>
-      </div>
+      <!-- CAREER EXPERIENCE -->
+      {% if site.data.cv.career.size > 0 %}
+      <section class="cv-section career-section">
+        <h2 class="section-title">
+          <i class="fa fa-briefcase section-title-icon" aria-hidden="true"></i>
+          <span>Work Experience</span>
+        </h2>
 
-      <div class="col-xs-9">
-        {% for item in site.data.cv.career %}
-         <div class="jd">
-          <div class="row">
-            <div class="col-xs-6">
-              <h4><b>{{ item.position }}</b></h4>
+        <div class="career-timeline">
+          {% for item in site.data.cv.career %}
+          <article class="career-card">
+            <div class="career-card-header">
+              <div class="career-title-group">
+                <h3 class="career-role">{{ item.position }}</h3>
+                <div class="career-meta">
+                  <span class="career-company">{{ item.company }}</span>
+                  {% if item.location %}
+                  <span class="career-separator">•</span>
+                  <span class="career-location"><i class="fa fa-map-marker"></i> {{ item.location }}</span>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="career-date-badge">
+                <i class="fa fa-calendar"></i> {{ item.dates }}
+              </div>
             </div>
-            <div class="col-xs-6 pull-right">
-              <h5 class="pull-right">{{ item.dates }}<br/>
-              {{item.company}} <i>({{item.location}})</i></h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <p>{{ item.summary }}</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
 
-           {% if item.accomplishments.size > 0 %}
-            <b>Main Responsibilities:</b>
-           {% endif %}
-            <ul>
-            {% for accomplishment in item.accomplishments %}
-              <li>{{ accomplishment.accomplishment }}</li>
-            {% endfor %}
-            </ul>
-          </div>
-           </div>
+            {% if item.summary %}
+            <p class="career-summary">{{ item.summary }}</p>
+            {% endif %}
+
+            {% if item.accomplishments.size > 0 %}
+            <div class="career-accomplishments">
+              <span class="accomplishments-label">Key Responsibilities & Achievements:</span>
+              <ul class="accomplishments-list">
+                {% for accomplishment in item.accomplishments %}
+                <li>{{ accomplishment.accomplishment }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </article>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
-    </div>
+      </section>
+      {% endif %}
 
-    <div class="row section section-border pagebreakishere">
-      <div class="col-xs-3">
-        <h2>Technical Skills</h2>
-      </div>
-      <div class="col-xs-9">
-        <div class="row">
+      <!-- TECHNICAL SKILLS -->
+      {% if site.data.cv.technicalSkills %}
+      <section class="cv-section skills-section">
+        <h2 class="section-title">
+          <i class="fa fa-cogs section-title-icon" aria-hidden="true"></i>
+          <span>Technical Skills</span>
+        </h2>
+
+        <div class="skills-grid">
           <!-- Cloud Platforms -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-cloud"></i> Cloud Platforms</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.cloudPlatforms %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'AWS' %}fa fa-amazon{% when 'Azure' %}fa fa-windows{% when 'GCP' %}fa fa-google{% else %}fa fa-cloud{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.cloudPlatforms.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-cloud group-icon"></i> Cloud Platforms
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.cloudPlatforms %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'AWS' %}fa fa-amazon{% when 'Azure' %}fa fa-windows{% when 'GCP' %}fa fa-google{% else %}fa fa-cloud{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
-          <!-- Containerization and Orchestration -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-cubes"></i> Containerization & Orchestration</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.containerizationAndOrchestration %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Docker' %}fa fa-docker{% when 'Kubernetes' %}fa fa-kubernetes{% else %}fa fa-cube{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% endif %}
+
+          <!-- Containerization & Orchestration -->
+          {% if site.data.cv.technicalSkills.containerizationAndOrchestration.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-cubes group-icon"></i> Containerization & Orchestration
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.containerizationAndOrchestration %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Docker' %}fa fa-cube{% when 'Kubernetes' %}fa fa-cubes{% else %}fa fa-server{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
+          {% endif %}
+
           <!-- Infrastructure as Code -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-code-fork"></i> Infrastructure as Code</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.infrastructureAsCode %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Terraform/OpenTofu/Terragrunt' %}fa fa-wrench{% when 'CloudFormation' %}fa fa-aws{% when 'Pulumi' %}fa fa-code{% else %}fa fa-code{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.infrastructureAsCode.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-code-fork group-icon"></i> Infrastructure as Code
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.infrastructureAsCode %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Terraform/OpenTofu/Terragrunt' %}fa fa-wrench{% when 'CloudFormation' %}fa fa-amazon{% when 'Pulumi' %}fa fa-code{% else %}fa fa-code{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
-        </div>
+          {% endif %}
 
-        <div class="row">
           <!-- CI/CD Tools -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-rocket"></i> CI/CD Tools</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.ciCdTools %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Azure DevOps' %}fa fa-windows{% when 'GitHub Actions' %}fa fa-github{% when 'Jenkins' %}fa fa-cogs{% when 'ArgoCD' %}fa fa-ship{% else %}fa fa-cog{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.ciCdTools.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-rocket group-icon"></i> CI/CD & Automation
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.ciCdTools %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Azure DevOps' %}fa fa-windows{% when 'GitHub Actions' %}fa fa-github{% when 'Jenkins' %}fa fa-cogs{% when 'ArgoCD' %}fa fa-refresh{% else %}fa fa-cogs{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
+          {% endif %}
+
           <!-- Monitoring and Logging -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-tachometer"></i> Monitoring & Logging</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.monitoringAndLogging %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Grafana' %}fa fa-area-chart{% when 'Prometheus' %}fa fa-line-chart{% when 'Loki' %}fa fa-eye{% when 'Elasticsearch' %}fa fa-search{% else %}fa fa-dashboard{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.monitoringAndLogging.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-tachometer group-icon"></i> Monitoring & Observability
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.monitoringAndLogging %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Grafana' %}fa fa-area-chart{% when 'Prometheus' %}fa fa-line-chart{% when 'Loki' %}fa fa-eye{% when 'Elasticsearch' %}fa fa-search{% else %}fa fa-dashboard{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
+          {% endif %}
+
           <!-- Programming and Scripting -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-code"></i> Programming & Scripting</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.programmingAndScripting %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Python' %}fa fa-python{% when 'Bash' %}fa fa-terminal{% when 'Basics of Go' %}fa fa-go{% else %}fa fa-code{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.programmingAndScripting.size > 0 %}
+          <div class="skill-group-card">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-terminal group-icon"></i> Programming & Scripting
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.programmingAndScripting %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Python' %}fa fa-code{% when 'Bash' %}fa fa-terminal{% when 'Basics of Go' %}fa fa-code{% else %}fa fa-code{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
-        </div>
+          {% endif %}
 
-        <div class="row">
           <!-- Other Tools -->
-          <div class="col-xs-4">
-            <h4 class="techSkillHeader"><i class="fa fa-wrench"></i> Other Tools</h4>
-            <ul class="list-unstyled">
-            {% for item in site.data.cv.technicalSkills.otherTools %}
-              <li>
-                <i class="{% case item.name %}
-                  {% when 'Istio' %}fa fa-cloud{% when 'Linkerd' %}fa fa-link{% when 'Dependency Track' %}fa fa-shield{% when 'ServiceNow' %}fa fa-ticket{% when 'Jira' %}fa fa-atlassian{% when 'Node-Red' %}fa fa-node{% else %}fa fa-toolbox{% endcase %}"></i>
-                {{ item.name }}
-              </li>
-            {% endfor %}
-            </ul>
+          {% if site.data.cv.technicalSkills.otherTools.size > 0 %}
+          <div class="skill-group-card skill-group-span-2">
+            <h3 class="skill-group-heading">
+              <i class="fa fa-wrench group-icon"></i> Service Mesh & Collaboration
+            </h3>
+            <div class="skill-tag-list">
+              {% for item in site.data.cv.technicalSkills.otherTools %}
+              <span class="skill-tag">
+                <i class="{% case item.name %}{% when 'Istio' %}fa fa-sitemap{% when 'Linkerd' %}fa fa-link{% when 'Dependency Track' %}fa fa-shield{% when 'ServiceNow' %}fa fa-ticket{% when 'Jira' %}fa fa-tasks{% when 'Node-Red' %}fa fa-code-fork{% else %}fa fa-wrench{% endcase %}" aria-hidden="true"></i>
+                <span class="tag-name">{{ item.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
           </div>
+          {% endif %}
         </div>
 
-        <!-- Key Competencies -->
         {% if site.data.cv.technicalSkills.list.size > 0 %}
-        <div>
-          <h4><i class="fa fa-male"></i> Key Competencies:</h4>
-          <ul>
+        <div class="competencies-card">
+          <h4 class="competencies-heading"><i class="fa fa-check-circle"></i> Key Competencies</h4>
+          <ul class="competencies-list">
             {% for item in site.data.cv.technicalSkills.list %}
-              <li>{{ item.tr }}</li>
+            <li>{{ item.tr }}</li>
             {% endfor %}
           </ul>
         </div>
         {% endif %}
-      </div>
-    </div>
+      </section>
+      {% endif %}
 
-    <!-- Certifications Section -->
-    {% if site.data.cv.certifications.size > 0 %}
-    <div class="row section section-border">
-      <div class="col-xs-3">
-        <h2>Certifications</h2>
-      </div>
-      <div class="col-xs-9">
-        {% for cert in site.data.cv.certifications %}
-        <div class="row">
-          <div class="col-xs-12">
-            <h4><b>{{ cert.name }}</b></h4>
-            <p>{{ cert.date }}</p>
-            {% if cert.badge %}
-              {{ cert.badge | safe }}
-            {% elsif cert.link %}
-              <a href="{{ cert.link }}">{{ cert.link }}</a>
-            {% endif %}
-          </div>
+      <!-- TWO-COLUMN LAYOUT FOR CERTS, EDUCATION, LANGUAGES, INTERESTS -->
+      <div class="cv-columns-split">
+        
+        <!-- Left Column: Certifications & Education -->
+        <div class="cv-column-main">
+          <!-- Certifications -->
+          {% if site.data.cv.certifications.size > 0 %}
+          <section class="cv-section certs-section">
+            <h2 class="section-title">
+              <i class="fa fa-certificate section-title-icon" aria-hidden="true"></i>
+              <span>Certifications</span>
+            </h2>
+            <div class="certs-container">
+              {% for cert in site.data.cv.certifications %}
+              <div class="cert-card">
+                <div class="cert-header">
+                  <h3 class="cert-title">{{ cert.name }}</h3>
+                  {% if cert.date %}
+                  <span class="cert-year"><i class="fa fa-calendar-check-o"></i> {{ cert.date }}</span>
+                  {% endif %}
+                </div>
+                {% if cert.badge %}
+                <div class="cert-badge-container">
+                  {{ cert.badge | safe }}
+                </div>
+                {% elsif cert.link %}
+                <div class="cert-link-wrap">
+                  <a href="{{ cert.link }}" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <i class="fa fa-external-link"></i> View Credential
+                  </a>
+                </div>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+
+          <!-- Education -->
+          {% if site.data.cv.education.size > 0 %}
+          <section class="cv-section edu-section">
+            <h2 class="section-title">
+              <i class="fa fa-graduation-cap section-title-icon" aria-hidden="true"></i>
+              <span>Education</span>
+            </h2>
+            <div class="edu-container">
+              {% for item in site.data.cv.education %}
+              <div class="edu-card">
+                <div class="edu-card-header">
+                  <h3 class="edu-degree">{{ item.degree }}</h3>
+                  {% if item.dates %}
+                  <span class="edu-dates"><i class="fa fa-calendar"></i> {{ item.dates }}</span>
+                  {% endif %}
+                </div>
+                <div class="edu-institution">
+                  <i class="fa fa-university edu-icon"></i>
+                  <span>{{ item.institution }}</span>
+                </div>
+                {% if item.link %}
+                <div class="edu-link-wrap">
+                  <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="edu-link">
+                    <i class="fa fa-external-link"></i> {{ item.link | replace: 'https://', '' | replace: 'http://', '' }}
+                  </a>
+                </div>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
         </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
 
-    <!-- Education Section -->
-    <div class="row section section-border">
-      <div class="col-xs-3"><h2>Education</h2></div>
-      <div class="col-xs-9">
-        {% for item in site.data.cv.education %}
-        <div class="row">
-          <div class="col-xs-12">
-            <h4><b>{{ item.degree }}</b> in {{ item.name }}</h4>
-            <p><i class="fa fa-calendar"></i> {{ item.dates }}</p>
-            <p><i class="fa fa-university"></i> {{ item.institution }}</p>
-            {% if item.link %}
-            <a href="{{ item.link }}">{{ item.link }}</a>
-            {% endif %}
-          </div>
+        <!-- Right Column: Languages & Interests -->
+        <div class="cv-column-side">
+          <!-- Languages -->
+          {% if site.data.cv.languages.size > 0 %}
+          <section class="cv-section lang-section">
+            <h2 class="section-title">
+              <i class="fa fa-language section-title-icon" aria-hidden="true"></i>
+              <span>Languages</span>
+            </h2>
+            <div class="lang-container">
+              {% for lang in site.data.cv.languages %}
+              <div class="lang-card">
+                <span class="lang-name">{{ lang.name }}</span>
+                <span class="lang-badge">{{ lang.proficiency }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+
+          <!-- Interests -->
+          {% if site.data.cv.interests.size > 0 %}
+          <section class="cv-section interests-section">
+            <h2 class="section-title">
+              <i class="fa fa-heartbeat section-title-icon" aria-hidden="true"></i>
+              <span>Interests</span>
+            </h2>
+            <div class="interests-container">
+              {% for interest in site.data.cv.interests %}
+              <span class="interest-tag">
+                <i class="fa fa-star-o tag-icon" aria-hidden="true"></i>
+                <span>{{ interest.name }}</span>
+              </span>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
         </div>
-        {% endfor %}
-      </div>
-    </div>
 
-    <!-- Languages Section -->
-    {% if site.data.cv.languages.size > 0 %}
-    <div class="row section section-border">
-      <div class="col-xs-3"><h2>Languages</h2></div>
-      <div class="col-xs-9">
-        <ul>
-          {% for lang in site.data.cv.languages %}
-            <li>{{ lang.name }}: {{ lang.proficiency }}</li>
-          {% endfor %}
-        </ul>
       </div>
-    </div>
-    {% endif %}
 
-    <!-- Interests Section -->
-    {% if site.data.cv.interests.size > 0 %}
-    <div class="row section section-border">
-      <div class="col-xs-3"><h2>Interests</h2></div>
-      <div class="col-xs-9">
-        <ul>
-          {% for interest in site.data.cv.interests %}
-            <li>{{ interest.name }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    {% endif %}
-
+    </main>
   </div>
 </body>
-
-</html> 
+</html>

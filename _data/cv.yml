@@ -1,5 +1,5 @@
-url: http://streetturtle.github.io
-projectUrl: jekyl-cv-crafter
+url: https://krjnk.github.io
+projectUrl: krjnkcv
 
 person:
   name: Patryk Krajnik
@@ -13,7 +13,7 @@ person:
   github: /krjnk
   linkedin: /patryk-krajnik
   summary: >
-    Experienced Cloud Engineer with over 4 years of expertise in designing and managing cloud architectures on AWS, Azure, and GCP. Proficient in Kubernetes, Docker, and infrastructure automation tools like Terraform, Pulumi, and CloudFormation. Extensive experience in Kubernetes deployments and management, including service mesh implementations with Istio and Linkerd. Served as the lead engineer in cloud infrastructure assessments across AWS, Azure, and GCP. Acted as an infrastructure specialist for developers in numerous customer projects. Seeking to leverage my expertise to contribute to innovative DevOps initiatives.
+    Cloud Engineer with 4+ years of experience designing, automating, and operating multi-cloud infrastructure across AWS, Azure, and GCP. Specializes in Kubernetes at scale, service mesh (Istio, Linkerd), and infrastructure as code (Terraform, OpenTofu, Pulumi, CloudFormation). Has led cloud infrastructure assessments and acted as embedded infrastructure specialist across multiple customer engagements, translating platform requirements into secure, cost-efficient, production-ready architecture. Looking to bring that cross-cloud DevOps expertise to a team building resilient, automation-first platforms.
 
 career:
   - position: Cloud Engineer
@@ -21,39 +21,39 @@ career:
     location: Łódź/Remote, Poland
     dates: April 2022 – Present
     summary: >
-      Leading the design, implementation, and management of scalable, secure, and cost-effective cloud architectures on AWS, Azure, and GCP. Extensive experience with Kubernetes deployments and management, including service mesh implementations using Istio and Linkerd. Acted as lead engineer in cloud infrastructure assessments and served as an infrastructure specialist supporting developers in various customer projects.
+      Design, implement, and operate scalable, secure, cost-effective cloud architectures on AWS, Azure, and GCP for multiple customer accounts. Own Kubernetes platform work end to end, including service mesh rollouts with Istio and Linkerd. Lead cloud infrastructure assessments and act as the embedded infrastructure specialist supporting development teams across customer projects.
     accomplishments:
-      - accomplishment: Led cloud infrastructure assessments on AWS, Azure, and GCP, providing strategic recommendations that enhanced security, performance, and cost-efficiency.
-      - accomplishment: Managed Kubernetes deployments, utilizing Istio and Linkerd for service mesh implementations, optimizing cluster performance and network management.
-      - accomplishment: Implemented infrastructure as code using Terraform, CloudFormation, and Pulumi, reducing manual provisioning time and security.
-      - accomplishment: Built and maintained CI/CD pipelines using Azure DevOps, GitHub Actions, and Jenkins, accelerating deployment cycles and improving code quality.
-      - accomplishment: Provided infrastructure expertise to development teams, facilitating the deployment of applications in cloud environments and improving collaboration between DevOps and development teams.
-      - accomplishment: Configured autoscaling on Azure Kubernetes Service (AKS), enhancing application scalability and reliability.
+      - accomplishment: Led cloud infrastructure assessments across AWS, Azure, and GCP, delivering recommendations that improved security posture, performance, and cost-efficiency for customer platforms.
+      - accomplishment: Operated production Kubernetes clusters and rolled out Istio and Linkerd service meshes, improving traffic management, observability, and network security.
+      - accomplishment: Codified infrastructure with Terraform, OpenTofu, CloudFormation, and Pulumi, cutting manual provisioning effort and reducing configuration drift.
+      - accomplishment: Built and maintained CI/CD pipelines with Azure DevOps, GitHub Actions, and Jenkins, shortening deployment cycles while improving release quality.
+      - accomplishment: Partnered with development teams as embedded infrastructure specialist, streamlining application deployment to cloud environments and improving DevOps–development collaboration.
+      - accomplishment: Configured autoscaling on Azure Kubernetes Service (AKS), improving application scalability and reliability under variable load.
 
   - position: Junior Automation Engineer
     company: Atos Poland Global Services sp. z o. o.
     location: Bydgoszcz, Poland
     dates: June 2021 – April 2022
     summary: >
-      Contributed to the design and implementation of automation and monitoring solutions for new clients. Collaborated with architects and project managers to enhance operational efficiency and deliver high-quality services.
+      Built automation and monitoring solutions for new client onboardings, working closely with architects and project managers to raise operational efficiency and service quality.
     accomplishments:
-      - accomplishment: Developed automation solutions using Python and Bash, reducing manual workload and increasing efficiency.
-      - accomplishment: Designed Grafana dashboards utilizing Elasticsearch data, improving data visualization and decision-making processes.
-      - accomplishment: Assisted in deploying high-availability applications using Docker and Docker Swarm, enhancing system uptime and reliability.
-      - accomplishment: Identified and implemented automation opportunities within the organization, increasing work efficiency.
-      - accomplishment: Collaborated with cross-functional teams to implement monitoring solutions and transition them to BAU operations.
+      - accomplishment: Wrote Python and Bash automation that removed repetitive manual work and cut operational overhead.
+      - accomplishment: Built Grafana dashboards on Elasticsearch data, giving teams clearer visibility for faster decision-making.
+      - accomplishment: Helped deploy high-availability applications on Docker and Docker Swarm, improving system uptime and reliability.
+      - accomplishment: Identified and delivered automation opportunities across the organization, increasing team efficiency.
+      - accomplishment: Worked with cross-functional teams to roll out monitoring solutions and hand them over into steady-state (BAU) operations.
 
   - position: Junior ICT Engineer
     company: Atos Poland Global Services sp. z o. o.
     location: Bydgoszcz, Poland
     dates: September 2020 – June 2021
     summary: >
-      Provided frontline operational support for multiple clients' infrastructures, addressing network, server, system, database, and application issues. Ensured seamless IT operations by promptly responding to incidents and coordinating with various support teams.
+      Provided frontline operational support across multiple client infrastructures — network, server, system, database, and application issues — ensuring uninterrupted IT operations through fast incident response and cross-team coordination.
     accomplishments:
-      - accomplishment: Resolved technical issues related to servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction rates.
-      - accomplishment: Monitored systems using tools like Zabbix and Nagios, responding to alerts promptly and reducing average response times.
-      - accomplishment: Performed routine operational tasks including generating reports and conducting system integrity checks.
-      - accomplishment: Assisted in implementing ITIL processes within the support team, improving incident and problem management efficiency.
+      - accomplishment: Resolved incidents across servers, network infrastructure, access management, Active Directory, and SAP, improving client satisfaction.
+      - accomplishment: Monitored infrastructure with Zabbix and Nagios, triaging alerts quickly to reduce average response times.
+      - accomplishment: Owned routine operational tasks, including reporting and system integrity checks.
+      - accomplishment: Helped roll out ITIL processes within the support team, improving incident and problem management.
 
 technicalSkills:
   cloudPlatforms:
